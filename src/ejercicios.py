@@ -1,7 +1,12 @@
 # Ejercicio 1: Suma de elementos en una lista de listas
 def suma_matriz(matriz):
-    for i in matriz:
-        print(i)
+    fil = len(matriz)
+    col = len(matriz[0])
+    acumulador = 0
+    for i in range(fil):    #Los índices de las filas
+        for j in range(col):#Los índices de las columnas
+            acumulador += matriz[i][j]
+    return acumulador
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
 def maximo_matriz(matriz):
@@ -78,7 +83,9 @@ def cifrado_cesar(texto, desplazamiento):
 
 #Aquí comienza el progrma principal. No modifiques el código debajo de esta línea.
 def main():
-    pass
+    lista = [[4,5,6],[7,8,9]]
+    resultado = suma_matriz(lista)
+    print(f"La suma de todos los elementos es: {resultado}")
 
 
 if __name__ == "__main__":
