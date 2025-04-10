@@ -1,9 +1,7 @@
 # Ejercicio 1: Suma de elementos en una lista de listas
 def suma_matriz(matriz):
-    suma = 0
-    for fila in matriz:
-        suma += sum(fila)
-    return suma
+    for i in matriz:
+        print(i)
 
 # Ejercicio 2: Encontrar el valor máximo en una matriz
 def maximo_matriz(matriz):
